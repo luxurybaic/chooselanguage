@@ -39,25 +39,30 @@
             font-size: 22px;
         }
 
-        a {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            text-decoration: none;
-            padding: 16px;
-            margin: 12px 0;
-            border-radius: 14px;
-            font-size: 17px;
-            font-weight: bold;
-            transition: 0.2s ease;
-        }
+       a {
+    display: flex;
+    align-items: center;
+    justify-content: center;      /* النص في السنتر */
+    text-align: center;
+    text-decoration: none;
+    padding: 18px;                /* زر أكبر شوية */
+    margin: 14px 0;
+    border-radius: 16px;
+    font-size: 19px;              /* 👈 تكبير الفونت */
+    font-weight: 700;
+    transition: 0.2s ease;
+    position: relative;
+}
 
-        a img {
-            width: 28px;
-            height: 20px;
-            border-radius: 4px;
-            object-fit: cover;
-        }
+       a img {
+    position: absolute;
+    left: 16px;
+    width: 30px;                  /* كبرنا العلم سنة بسيطة */
+    height: 22px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
 
         .lang-ar { background: #e74c3c; color: #fff; }
         .lang-en { background: #f1c40f; color: #000; }
@@ -115,3 +120,4 @@
 
 </body>
 </html>
+
