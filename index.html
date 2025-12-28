@@ -8,10 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-
-            /* 👇 حط اسم وامتداد صورة الخلفية هنا */
             background: url("luxurybaic123.png") no-repeat center center / cover;
-
             display: flex;
             justify-content: center;
             align-items: center;
@@ -19,7 +16,6 @@
             margin: 0;
         }
 
-        /* طبقة تغميق علشان الأزرار تبان */
         .overlay {
             background: rgba(0,0,0,0.6);
             position: absolute;
@@ -44,7 +40,9 @@
         }
 
         a {
-            display: block;
+            display: flex;
+            align-items: center;
+            gap: 12px;
             text-decoration: none;
             padding: 16px;
             margin: 12px 0;
@@ -54,11 +52,18 @@
             transition: 0.2s ease;
         }
 
-        /* ألوان اللغات */
+        a img {
+            width: 28px;
+            height: 20px;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+
         .lang-ar { background: #e74c3c; color: #fff; }
         .lang-en { background: #f1c40f; color: #000; }
-        .lang-fr { background: #3498db; color: #fff; }
-        .lang-it { background: #2ecc71; color: #000; }
+        .lang-de { background: #3498db; color: #fff; }
+        .lang-ru { background: #2ecc71; color: #000; }
+        .lang-fr { background: #9b59b6; color: #fff; }
 
         a:hover {
             transform: scale(1.05);
@@ -81,24 +86,32 @@
             Select Language
         </h2>
 
-        <!-- 👇 عدّل روابط الـ PDF لكل لغة -->
-        <a class="lang-ar" href="https://www.dropbox.com/scl/fi/sfwiya9ic14l0e6m1a3fg/Travel-Plan-Arabic.pdf?rlkey=dxe3ls00kp2ebps6ecyirem7t&st=tx12dzbo&dl=0" target="_blank">
+        <a class="lang-ar" href="https://www.dropbox.com/scl/fi/1tgytlv2odrwjb5pfyles/Travel-Plan-Arabic.pdf?rlkey=rucg692l0fs1612es6dul5krc&st=xfry9d8e&dl=0" target="_blank">
+            <img src="https://flagsapi.com/EG/flat/32.png">
             العربية
         </a>
 
-        <a class="lang-en" href="https://www.dropbox.com/scl/fi/zo7svgkdd941cutw160i5/Travel-plan-En.pdf?rlkey=2c14gau8drx03ekj2gv9p49bd&st=amyvrruw&dl=0" target="_blank">
+        <a class="lang-en" href="https://www.dropbox.com/scl/fi/8j7e88098lx14av04yf57/Travel-Plan-En.pdf?rlkey=9evnv2wp2upp199gdd5a28xd2&st=4c1966fp&dl=0" target="_blank">
+            <img src="https://flagsapi.com/US/flat/32.png">
             English
         </a>
 
-        <a class="lang-fr" href="https://www.dropbox.com/scl/fi/n2ilj9cmk3e733vd6md6c/Travel-Plan-Deutsch.pdf?rlkey=su2a3r9begq2f645p9inhx8hc&st=ijjmfe5u&dl=0" target="_blank">
+        <a class="lang-de" href="https://www.dropbox.com/scl/fi/w5crf55g4jgpkyueqjn3b/Travel-Plan-Deutsch.pdf?rlkey=65vya1sb7kwz64o7nwp1z51af&st=epexzgzb&dl=0" target="_blank">
+            <img src="https://flagsapi.com/DE/flat/32.png">
             Deutsch
         </a>
 
-        <a class="lang-it" href="https://www.dropbox.com/scl/fi/tq3rbieujmaicqza6bjnv/Travel-Plan-Russian.pdf?rlkey=oe9kwpkqwxqhryw4fv6yn3sto&st=7p9cpy51&dl=0" target="_blank">
-            Russian
+        <a class="lang-ru" href="https://www.dropbox.com/scl/fi/zmd62wamy9013db5uknh3/Travel-Plan-Russian.pdf?rlkey=la2yh39ozbyreef66cun98sra&st=boc555jm&dl=0" target="_blank">
+            <img src="https://flagsapi.com/RU/flat/32.png">
+            Русский
         </a>
+
+        <a class="lang-fr" href="https://www.dropbox.com/scl/fi/onub6zs23bzaqdsylsupl/Travel-Plan-Fr.pdf?rlkey=clrdfx5nk5mt4zcjipqv1slvq&st=wlbrwg7h&dl=0" target="_blank">
+            <img src="https://flagsapi.com/FR/flat/32.png">
+            Français
+        </a>
+
     </div>
 
 </body>
 </html>
-
